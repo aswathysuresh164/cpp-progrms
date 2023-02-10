@@ -1,0 +1,10 @@
+
+#include<iostream>
+
+int main()
+{
+    std::cout<<"Aswathy"<<std::endl;
+    std::cout<<"Aswathy"<<std::endl;
+    std::cout<<"Aswathy"<<std::endl;
+    return 0;
+}
