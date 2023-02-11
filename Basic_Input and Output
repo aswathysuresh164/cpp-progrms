@@ -1,0 +1,12 @@
+#include<iostream>
+#include<string>
+int main()
+{
+   int age;
+    std::string name;
+    std::cout<<"Enter the name and age:";
+    std::cin>>name>>age;
+    std::cout<<name<<" is "<<age<<" years old"<<std::endl;
+    
+    return 0;
+}
