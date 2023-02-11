@@ -1,0 +1,15 @@
+
+#include<iostream>
+int addNumbers(int a, int b)
+{
+    return a+b;
+}
+int main()
+{
+   int number1{13};
+    int number2{7};
+    int sum=0;
+    sum=addNumbers(number1,number2);
+    std::cout<<"The sum of 2 numbers is :"<<sum<<std::endl;
+    return 0;
+}
