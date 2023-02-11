@@ -1,0 +1,14 @@
+
+#include<iostream>
+#include<string>
+int main()
+{
+   int age;
+    std::string name;
+    std::cout<<"Enter the name and age:";
+    std::getline(std::cin,name);//reading with spaces
+    std::cin>>age;
+    std::cout<<name<<" is "<<age<<" years old"<<std::endl;
+    
+    return 0;
+}
