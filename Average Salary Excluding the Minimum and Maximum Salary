@@ -1,0 +1,20 @@
+class Solution {
+public:
+    double average(vector<int>& salary) {
+        int min=*min_element(salary.begin(), salary.end());
+        int max=*max_element(salary.begin(), salary.end());
+       
+        double sum=0,count=0;
+        for(auto i=salary.begin();i!=salary.end();i++)
+        {
+          if(*i!=min&&*i!=max)
+          {
+            //   cout<<*i;
+              sum=sum+(*i);
+              
+              count++;
+          }
+        }
+        return sum/count;
+    }
+};
