@@ -1,0 +1,13 @@
+   bool isPowerofTwo(long long n){
+        
+        // Your code here
+        double d;
+        if(n<=0)
+          return false;
+        else
+            d=log10(n)/log10(2);
+        
+            return floor(d)==d;
+        
+        
+    }
