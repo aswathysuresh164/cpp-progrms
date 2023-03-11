@@ -1,0 +1,66 @@
+Given a string str and another string patt. Find the minimum index of the character in str that is also present in patt.
+
+
+Example 1:
+
+Input:
+str = geeksforgeeks
+patt = set
+Output: 1
+Explanation: e is the character which is
+present in given str "geeksforgeeks"
+and is also presen in patt "set". Minimum
+index of e is 1. 
+Example 2:
+
+Input:
+str = adcffaet
+patt = onkl
+Output: -1
+Explanation: There are none of the
+characters which is common in patt
+and str.
+
+Your Task:
+You only need to complete the function minIndexChar() that returns the index of answer in str or returns -1 in case no character of patt is present in str.
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class Solution
+{
+  public:
+    //Function to find the minimum indexed character.
+    int minIndexChar(string str, string patt)
+    {
+        // Your code here
+        map<char,int> mpp;
+        // for(int i=0;i<str.size();i++)
+        // {
+        //     for(int j=i;j<patt.size();j++)
+        //     {
+        //         if(str[i]==patt[j])
+        //              return i;
+        //     }
+        // }
+        for(int i=0;i<patt.size();i++)
+        {
+           mpp[patt[i]]++;
+        }
+        for(int i=0;i<str.size();i++)
+        {
+           if(mpp.find(str[i])!=mpp.end())  
+           //In this line, we compare the iterator returned by charIndexMap.find(str[i]) to the 
+           //iterator pointing to the end of the map (charIndexMap.end()). If the iterators are not equal, it means that the current character str[i] exists in the map (i.e., it is a character in the pattern string). Thus, we execute the if block, which returns the index of the character in the input string.
+
+//If the iterator returned by charIndexMap.find(str[i]) is equal to charIndexMap.end(),
+//it means that the current character str[i] does not exist in the map (i.e., it is not a character in the pattern string). In this case, we continue to the next character in the input string.
+             return i;
+        }
+        
+        
+        return -1;
+    }
+};
