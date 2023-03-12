@@ -1,0 +1,25 @@
+//     int checkpal(int n)
+//     {
+//         int p=n,r=0,d;
+//         while(n>0)
+//         {
+//             d=n%10;
+//             r=r*10+d;
+//             n=n/10;
+//         }
+//         if(r==p)
+//           return 1;
+//         else
+//           return 0;
+//     }
+//     int PalinArray(int a[], int n)
+//     {
+//     	// code here
+//     	for(int i=0;i<n;i++)
+//     	{
+//     	    if(checkpal(a[i])==0)
+//     	       return 0;
+//     	}
+//     	return 1;
+//     }
+// };
