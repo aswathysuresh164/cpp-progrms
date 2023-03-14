@@ -1,0 +1,17 @@
+You are given an integer N. Print numbers from 1 to N without the help of loops.
+
+Example 1:
+
+Input:
+N = 5
+Output:
+1 2 3 4 5
+Explanation:
+We have to print numbers from 1 to 5.
+////////////////////////////////////////////////
+
+
+ int addition(int A, int B){
+        // code here 
+        return A+B;
+    }
