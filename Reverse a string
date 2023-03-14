@@ -1,0 +1,23 @@
+Given a String S , print the reverse of the string as output.
+
+Example 1:
+
+Input: S = "GeeksforGeeks"
+Output: "skeeGrofskeeG" 
+Explanation: Element at first is at last and
+last is at first, second is at second last and 
+second last is at second position and so on .
+////////////////////////////////////////////////////
+
+  string revStr(string S) {
+        // code here
+        char str[S.size()-1];
+        int j=0;
+        for(int i=S.size()-1;i>=0;i--)
+        {
+            str[j]=S[i];
+            j++;
+        }
+        str[j]='\0';
+       return str;
+    }
