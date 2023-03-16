@@ -1,0 +1,13 @@
+long long fact(int n)
+  {
+      long long f=1;
+      for(int i=n;i>=1;i--)
+        {
+            f=f*i;
+        }
+        return f;
+  }
+    long long nPr(int n, int r){
+        // code here
+        return fact(n)/fact(n-r);
+    }
