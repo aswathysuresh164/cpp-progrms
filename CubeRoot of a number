@@ -1,0 +1,4 @@
+   int cubeRoot(int N) {
+        // code here
+        return cbrt(N);
+    }
