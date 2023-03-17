@@ -1,0 +1,16 @@
+  int largest(vector<int> &arr, int n)
+    
+    {
+        //brute force approach
+        // sort(arr.begin(),arr.end());
+        // return arr[n-1];
+        
+        //efficient solution
+        int large=arr[0];
+        for(int i=1;i<n;i++)
+        {
+            if(arr[i]>large)
+              large=arr[i];
+        }
+        return large;
+    }
