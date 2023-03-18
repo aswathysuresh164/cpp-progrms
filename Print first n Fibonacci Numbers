@@ -1,0 +1,19 @@
+     vector<long long> printFibb(int n) 
+{
+    vector<long long> v;
+    v.push_back(1);
+    if(n==1) // special case for n=1
+        return v;
+    v.push_back(1);
+    if(n==2) // special case for n=2
+        return v;
+    long long fib1=1, fib2=1, fib3=0; // use long long instead of int to avoid integer overflow
+    for(int i=3;i<=n;i++) // change the loop condition to i<=n, and start from i=3
+    {
+        fib3=fib1+fib2;
+        v.push_back(fib3);
+        fib1=fib2;
+        fib2=fib3;
+    }
+    return v;
+}
