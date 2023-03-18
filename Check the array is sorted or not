@@ -1,0 +1,11 @@
+ bool arraySortedOrNot(int arr[], int n) {
+        // code here
+        for(int i=1;i<n;i++)
+        {
+            if(arr[i-1]<=arr[i])
+              continue;
+            else
+               return 0;
+        }
+        return 1;
+    }
