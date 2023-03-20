@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+void rotate(int a[],int d,int n)
+{
+    d=d%n;
+    reverse(a,a+d); //reverse 0 to d elements
+    reverse(a+d,a+n);//revers remaing end elemnets
+    reverse(a,a+n); //reverse the whole elements
+    
+    
+}
+
+int main()
+{
+    cout<<"Left rotate Array by n times\n";
+    int a[]={1,2,3,4,5};
+
+    int d;
+    cout<<"\n Enter the number of times :";
+    cin>>d;
+    rotate(a,d,5);
+    cout<<"\n Array after rotate: ";
+    for(int i=0;i<5;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}
