@@ -1,0 +1,29 @@
+  int NumberofElementsInIntersection(int a[], int b[], int n, int m) {
+        // Your code goes here
+        
+        
+        
+          vector <int> ans;
+  
+  // to maintain visited
+  vector <int> visited(m, 0);  
+  int i = 0, j = 0;
+  
+  while (i < n && j < m) {
+      
+    //if current element in i is smaller
+    if (a[i] < b[j]) { 
+      i++;
+    } else if (b[j] < a[i]) {
+      j++;
+    } else {
+        
+      //both elements are equal
+      ans.push_back(a[i]); 
+      i++;
+      j++;
+    }
+  }
+  
+  return ans.size();
+    }
