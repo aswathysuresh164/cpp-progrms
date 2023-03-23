@@ -25,5 +25,5 @@
     }
   }
   
-  return ans.size();
+  return ans;
     }
